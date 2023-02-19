@@ -15,10 +15,10 @@ summary: "Fully Responsive Website, enlisting Major Blogs and Events of The NSS 
 ---
 <hr>
 <pre>
-Deploy Link : - <a href = "https://daxoron.github.io/NSSWebsite">Click Here</a>
+Deploy Link : - <a href = "https://kr-anish.github.io/NSSWebsite">Click Here</a>
 </pre>
 Screenshot:
 <img class="img-fluid" src="../img/ss2.png">
 <hr>
 
-GitHub Repository: <a href="https://github.com/daxoron/NSSWebsite"><i class="large github icon "></i>NSS Website - Blogs and Events</a>
+GitHub Repository: <a href="https://github.com/kr-anish/NSSWebsite"><i class="large github icon "></i>NSS Website - Blogs and Events</a>
