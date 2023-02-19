@@ -5,19 +5,19 @@
     "picture": "https://i.ibb.co/0nh7n2n/anish.jpg",
     "email": "daxoron.dev@gmail.com",
     "phone": "+918207893972",
-    "website": "https://daxoron.github.io",
+    "website": "https://kr-anish.github.io",
     "summary": "B.Tech Computer Science from Dr. APJAKT University. I Expect to Graduate in 2024.",
     "location": { "address": "", "postalCode": "201301", "city": "Gurugram", "countryCode": "India", "region": "Gurugram" },
     "profiles": [
-      { "network": "github", "username": "daxoron", "url": "http://github.com/daxoron" },
+      { "network": "github", "username": "daxoron", "url": "http://github.com/kr-anish" },
       { "network": "linkedin", "username": "kr-anish", "url": "http://linkedin.com/in/kr-anish" },
-      { "network": "twitter", "username": "daxoron", "url": "http://twitter.com/daxoron" }
+      { "network": "twitter", "username": "daxoron", "url": "http://twitter.com/krs_anish" }
     ]
   },
   "interests": [
-    { "name": "Competitive Coding" },
-    { "name": "Problem Solving" },
-    { "name": "Web Development" }
+    { "name": "Frontend Development" },
+    { "name": "Sport Programming" },
+    { "name": "Javascript" }
   ],
   "skills": [
     {
