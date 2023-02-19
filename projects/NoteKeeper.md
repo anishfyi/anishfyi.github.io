@@ -14,7 +14,7 @@ summary: "It Creates Notes with Entered Title and Description."
 ---
 <hr>
 <pre>
-Deploy Link : - <a href = "https://daxoron.github.io/NoteKeeper">Click Here</a>
+Deploy Link : - <a href = "https://kr-anish.github.io/NoteKeeper">Click Here</a>
 <hr>
 
 Screenshot:
@@ -22,4 +22,4 @@ Screenshot:
 </pre>
 <hr>
 
-GitHub Repository: <a href="https://github.com/daxoron/NoteKeeper"><i class="large github icon "></i>Note Keeper</a>
+GitHub Repository: <a href="https://github.com/kr-anish/NoteKeeper"><i class="large github icon "></i>Note Keeper</a>
