@@ -1,3 +1,3 @@
 # Portfolio Website
 
-Deploy Link : <a href = "https://daxoron.github.io">Link</a>
+Deploy Link : <a href = "https://daxoron.is-a.dev">Link</a>
