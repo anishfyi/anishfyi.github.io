@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Igniting the fire"
+title: "Igniting the Code as an Engineer"
 # All dates must be YYYY-MM-DD format!
 date: 2022-08-13
 published: true
@@ -11,8 +11,6 @@ labels:
 ---
 
 <img width="100px" class="rounded float-start pe-4" src="../img/igniting/paintbrushes.jpg">
-
-Title: Igniting the Code as an Engineer
 
 ## Passion for Technology:
 Ever since I first laid my hands on a computer, I've been captivated by the world of technology. Exploring the intricacies of software engineering is akin to navigating the complexities of abstract art. Much like interpreting abstract paintings, software engineering holds diverse meanings for different individuals, sparking thoughtful contemplation.
