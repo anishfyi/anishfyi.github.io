@@ -21,5 +21,3 @@ Screenshot:
 <img class="img-fluid" src="../img/ss_1.png">
 </pre>
 <hr>
-
-GitHub Repository: <a href="https://github.com/kr-anish/GitHubRepoLister"><i class="large github icon "></i>Github Repository Lister</a>
