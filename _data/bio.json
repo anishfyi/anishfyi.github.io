@@ -15,7 +15,9 @@
     ]
   },
   "interests": [
-    { "name": "Problem Solving" }
+    { "name": "Problem Solving" },
+    { "name": "Full-Stack Development" },
+    { "name": "Code Optimization" }
   ],
   "skills": [
     {
