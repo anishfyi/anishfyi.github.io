@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "From Intern to Full-Time Engineer: Navigating the Challenges at Fyle"
+title: "Journey from Intern to a Full-Time Software Engineer at Fyle"
 # All dates must be YYYY-MM-DD format!
 date: 2023-03-01
 published: true
@@ -13,11 +13,11 @@ labels:
 
 *Difficulty: a thing that is hard to accomplish, deal with, or understand.*
 
-Last week, a friend posed an intriguing question: why is the transition from intern to a full-time officer for the student branch so challenging? Why does it appear more demanding than my on-campus job? This question surfaced after grappling with bookkeeping for the student organization.
+One of my friends asked me a compelling question earlier last week: why is it so challenging to transition from an intern to a full-time officer for the student branch? Why does it seem more demanding than my on-campus job? This question arose after he faced some difficulties with bookkeeping for the student organization.
 
-I initially offered the standard answer - being an officer requires effective time management between school and work, with no explicit guidance. It's a response any good mentor would give, and it holds truth.
+Initially, I provided him with the standard answer - being an officer of an organization demands effective time management between school and work, with no one explicitly guiding you. It's a response any good mentor would give, and it holds truth.
 
-However, as I contemplated further, I found myself thinking, "Damn, that's a really great question that deserves more thought." Most people, I believe, stop at the answer I initially provided - implying the struggle is due to poor time management.
+However, as I pondered more, I found myself thinking, "Damn, that's a really great question that deserves more thought." Most people, I believe, stop at the answer I initially provided - implying the struggle is due to poor time management.
 
 Here's what I think: the journey from intern to a full-time software engineer at Fyle, or any similar transition, will always be challenging.
 
