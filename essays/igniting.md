@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Igniting the Code as an Engineer"
 # All dates must be YYYY-MM-DD format!
-date: 2022-08-13
+date: 2022-12-31
 published: true
 labels:
   - Software Engineering
