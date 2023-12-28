@@ -7,6 +7,8 @@ date: 2023-03-01
 published: true
 labels:
   - Engineering
+  - Intern
+  - FTE
 ---
 
 <img width="200px" class="rounded float-start pe-4" src="../img/difficulty/degree_difficulty.jpg">
