@@ -2,31 +2,29 @@
   "basics": {
     "name": "Anish Kr Singh",
     "label": "🏆 Member of Techincal Staff @ Fyle Technologies",
-    "picture": "https://i.ibb.co/0nh7n2n/anish.jpg",
+    "picture": "https://avatars.githubusercontent.com/u/116036738?v=4",
     "email": "anish@criptext.com",
-    "phone": "+918207893972",
-    "website": "https://kr-anish.github.io",
-    "summary": "B.Tech Computer Science from Dr. APJAKT University. I Expect to Graduate in 2024.",
+    "phone": "",
+    "website": "https://anish.fyi",
+    "summary": "B.Tech Computer Science from Dr. APJAKT University.",
     "location": { "address": "", "postalCode": "201301", "city": "Gurugram", "countryCode": "India", "region": "Gurugram" },
     "profiles": [
-      { "network": "github", "username": "daxoron", "url": "http://github.com/kr-anish" },
-      { "network": "linkedin", "username": "kr-anish", "url": "http://linkedin.com/in/kr-anish" },
+      { "network": "github", "username": "anishfyi", "url": "http://github.com/anishfyi" },
+      { "network": "linkedin", "username": "kr-anish", "url": "http://linkedin.com/in/anishfyi" },
       { "network": "twitter", "username": "daxoron", "url": "http://twitter.com/anish_fyi" }
     ]
   },
   "interests": [
-    { "name": "Frontend Development" },
-    { "name": "Sport Programming" },
-    { "name": "Javascript" }
+    { "name": "Problem Solving" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "TypeScript", "JavaScript", "Angular" ]
+      "keywords": [ "C++", "Angular", "Typescript", "Django", "Python" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "Ubuntu", "Git/GitHub", "g++" ]
+      "keywords": [ "Mac", "Bash", "Git/GitHub", "Cypress", "Karma" ]
     }
   ],
   "education": [
@@ -54,14 +52,6 @@
         "Used HTML-ReactJs Parser",
         "Added Hyperlinks and Fixed Prettier Problems"
       ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Google Kickstart",
-      "date": "2021",
-      "awarder": "Google Competitions",
-      "summary": "Ranked Under 3000 out of 10000 Participants."
     }
   ],
   "references": [
