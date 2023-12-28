@@ -19,20 +19,19 @@ Here's what I think: the journey from being an intern to a full-time software en
 
 ## In the context of engineering
 
-New Feature Development: Took on the responsibility of crafting a brand-new feature. Leveraged the power of Angular for the frontend and Django for the backend. This involved not only coding but also understanding the intricacies of integrating these technologies seamlessly.
+<b>New Feature Development:</b> Took on the responsibility of crafting a brand-new feature. Leveraged the power of Angular for the frontend and Django for the backend. This involved not only coding but also understanding the intricacies of integrating these technologies seamlessly.
 
-Cypress End to End Test: Started the journey by diving into Cypress for end-to-end testing. It was both exciting and challenging to ensure that the application functions seamlessly from the user's perspective.
+<b>Cypress End to End Test:</b> Started the journey by diving into Cypress for end-to-end testing. It was both exciting and challenging to ensure that the application functions seamlessly from the user's perspective.
 
-Parity Features: Didn't stop at just one feature. Added multiple parity features to enhance the overall user experience. This required a deep understanding of the existing codebase and ensuring that the new additions align perfectly with the established standards.
+<b>Parity Features:</b> Didn't stop at just one feature. Added multiple parity features to enhance the overall user experience. This required a deep understanding of the existing codebase and ensuring that the new additions align perfectly with the established standards.
 
-Bug Fixing Across Integrations: Faced the inevitable bugs that come with integration. Debugging and fixing issues across different software integrations demanded attention to detail and a systematic approach.
-
-Integration Support: Moved beyond just writing code to provide support for integrations. This involved working closely with other teams to troubleshoot issues, ensuring a smooth collaboration between different parts of the system.
-
+<b>Bug Fixing Across Integrations:</b> Faced the inevitable bugs that come with integration. Debugging and fixing issues across different software integrations demanded attention to detail and a systematic approach.
 
 ## In the context of relationships
 
-Ticket Resolutions: Engaged in resolving multiple tickets. This wasn't just about fixing technical problems; it was also about building relationships with team members and stakeholders. Clear communication and collaboration were key in addressing and closing these tickets.
+<b>Integration Support:</b> Moved beyond just writing code to provide support for integrations. This involved working closely with other teams to troubleshoot issues, ensuring a smooth collaboration between different parts of the system.
+
+<b>Ticket Resolutions:</b> Engaged in resolving multiple tickets. This wasn't just about fixing technical problems; it was also about building relationships with team members and stakeholders. Clear communication and collaboration were key in addressing and closing these tickets.
 
 ## Okay!
 
