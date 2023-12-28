@@ -1,9 +1,9 @@
 ---
 layout: essay
 type: essay
-title: "The difficult things will always be difficult"
+title: "From Intern to Full-Time Engineer: Navigating the Challenges at Fyle"
 # All dates must be YYYY-MM-DD format!
-date: 2022-02-06
+date: 2023-03-01
 published: true
 labels:
   - Engineering
@@ -13,42 +13,42 @@ labels:
 
 *Difficulty: a thing that is hard to accomplish, deal with, or understand.*
 
-One of my friends asked the question earlier last week -- why is it so hard to be an officer for the student branch? Why is so hard compared to working at my on-campus job? This question came after he struggled a little with bookkeeping for the student organization.
+Last week, a friend posed an intriguing question: why is the transition from intern to a full-time officer for the student branch so challenging? Why does it appear more demanding than my on-campus job? This question surfaced after grappling with bookkeeping for the student organization.
 
-Now I gave him the standard answer - being an officer of an organization requires that you manage your time between school and work. There isn't anyone telling you what to do. It's the answer any good mentor would give, and is mostly true.
+I initially offered the standard answer - being an officer requires effective time management between school and work, with no explicit guidance. It's a response any good mentor would give, and it holds truth.
 
-But the more I though about it, the more I wondered to myself...damn that's a really great question; it's one that deserves some more thought. Most people I think stop at the answer I gave previously - he obviously isn't managing his time properly.
+However, as I contemplated further, I found myself thinking, "Damn, that's a really great question that deserves more thought." Most people, I believe, stop at the answer I initially provided - implying the struggle is due to poor time management.
 
-Here's what I think: the difficult things will always be difficult.
+Here's what I think: the journey from intern to a full-time software engineer at Fyle, or any similar transition, will always be challenging.
 
 ## In the context of programming
 
-In the context of programming, this has always been true. The difficult problems have always been different, although changes in technology can change the landscape quite a bit. "Business" type applications are the things that come to mind for me. Those types of applications are usually coupled in some way with people ... and people are awfully hard to deal with!
+In the realm of programming, this truth has endured. The challenges may shift with changes in technology, but difficult problems persist. Applications with a "business" focus, inherently intertwined with people, pose significant challenges. Dealing with people is inherently complex!
 
-Consider that one of the most popular content management systems is also considered the most horrible - Wordpress. But really, is there anything that fills that need? If it was so easy in the first place, where is the solution? Where's the magic CMS that is designed well enough that everyone hops on the boat to use it?
+Consider the popularity of Wordpress, despite its reputation. If building such content management systems were easy, where is the perfect solution? Where's the CMS that seamlessly caters to everyone's needs?
 
-Some things are just difficult - building applications that humans use is hard, and will probably be hard for at least the near future.
+Some things are just inherently difficult - constructing applications for human use is hard and likely to remain so in the foreseeable future.
 
 ## In the context of engineering
 
-Ever hear people ragging on engineering companies for delivering late and way over budget? Well, some engineering jobs are really difficult, especially if the requirements and funding are undulating underneath you. Because of the nature of the problem, sometimes engineering firms require large amounts of engineers and workers, inviting further problems and delays.
+Have you ever heard criticisms of engineering companies for delivering projects late and significantly over budget? Some engineering jobs are genuinely difficult, especially when the requirements and funding fluctuate. Complex problems sometimes demand a large workforce, leading to additional challenges and delays.
 
-The Honolulu Rail project at home has become this sort of poster child of failure, budget overrun and overall incompetence in Hawaii. Well, working though regulatory boards and fiscal procedures in Hawaii seems like it's a mind bogglingly difficult job to do. Granted, there might be some fishy stuff going on, but I refuse to believe that everyone is involved for nefarious reasons.
+The Honolulu Rail project, for example, has become a symbol of failure, budget overruns, and overall incompetence in Hawaii. Navigating regulatory boards and fiscal procedures in Hawaii seems mind-bogglingly challenging. While there might be questionable aspects, not everyone involved is likely doing so for nefarious reasons.
 
-The problem of creating an unprecedented public transportation backbone on an island is difficult! I'm not sure we would have done it right, even if the best people were involved.
+Creating an unprecedented public transportation backbone on an island is a daunting task! Even with the best minds, it's uncertain whether we would have succeeded.
 
 ## In the context of relationships
 
-So in the end, we realize that all engineering and programming is there for a reason - to serve human needs. Maybe that's why those things are difficult, because they both involve humans and are for humans.
+Ultimately, engineering and programming exist to serve human needs. Perhaps that's why these areas are challenging - they involve humans and cater to humans.
 
-Relationships, regardless if they're romantic or not take work. Humans are fickle creatures and relationships can come and go with the wind. To properly maintain something over time requires work. Family takes work. Marriage takes work. We live to figure out what works and what doesn't and hope that as we move forward we're improving.
+Relationships, whether romantic or not, require effort. Humans are unpredictable, and relationships can be transient. Sustaining something over time demands continuous work. Family necessitates work. Marriage demands work. We live to discern what works and what doesn't, hoping to improve as we progress.
 
-Relationships have always been difficult, and by nature will continue to be so.
+Relationships have always been difficult and will continue to be so by nature.
 
 ## Okay!
 
-So back to the original premise; why is being one of the club officers so difficult?
+Returning to the original question - why is transitioning from an intern to a club officer so challenging?
 
-And the final answer - it's supposed to be difficult, and it's supposed to challenge you, just like everything else that humans do that is difficult: programming, engineering, engaging in relationships, pondering the universe, etc.
+The ultimate answer - it's meant to be challenging. It's designed to test and push you, just like every other human endeavor that is challenging: programming, engineering, relationships, contemplating the universe, and more.
 
-Ultimately the question you should really ask yourself if something if particularly difficult is then "is it worth it"? That is something that is context specific and only you can answer yourself.
+When faced with something particularly difficult, the crucial question to ask yourself is, "Is it worth it?" This is context-specific, and only you can determine the answer.
