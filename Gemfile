@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+# Specify Bundler version
+gem "bundler", "2.4.22"
+
 gem "jekyll", "~> 4.2.0"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem and associated library.
