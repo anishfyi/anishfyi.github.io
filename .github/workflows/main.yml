@@ -6,7 +6,6 @@ on:
       - main
 
 jobs:
-
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
@@ -23,6 +22,8 @@ jobs:
         uses: limitusus/json-syntax-check@v1
         with:
           pattern: "\\bio.json$"
+      - name: Install Bundler 2.4.22
+        run: gem install bundler -v 2.4.22
       - name: Build & Deploy to GitHub Pages
         uses: joshlarsen/jekyll4-deploy-gh-pages@master
         env:
