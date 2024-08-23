@@ -24,6 +24,8 @@ jobs:
           pattern: "\\bio.json$"
       - name: Install Bundler 2.4.22
         run: gem install bundler -v 2.4.22
+      - name: Update Bundler Gems
+        run: bundle update --bundler
       - name: Build & Deploy to GitHub Pages
         uses: joshlarsen/jekyll4-deploy-gh-pages@master
         env:
