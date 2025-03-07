@@ -16,8 +16,7 @@ const Header = () => {
             Anish Kr Singh
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-light leading-relaxed">
-            Crafting exceptional digital experiences through innovative engineering
-          </p>
+            Software Engineer with 2+ years of experience.</p>
           <div className="flex flex-wrap gap-6 text-gray-700 dark:text-gray-300 text-lg pt-8">
             <a href="mailto:anishfyi@gmail.com" 
                className="hover:text-gray-900 dark:hover:text-white transition-colors duration-300 flex items-center gap-2">
