@@ -1,5 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from 'react'
 import './App.css'
+import Loading from './components/Loading'
 
 const Header = lazy(() => import('./components/Header'))
 const Experience = lazy(() => import('./components/Experience'))
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loading />}>
         <Navbar theme={theme} onThemeChange={setTheme} />
         <div className="container mx-auto px-4 pt-12 pb-8">
           <Header />
