@@ -15,6 +15,7 @@
   justify-content: center;
   scroll-snap-align: start;
   overflow: hidden;
+  padding: clamp(2rem, 5vw, 4rem) 0;
 }
 
 .parallax-bg {
@@ -31,9 +32,9 @@
 }
 
 .content-wrapper {
-  max-width: 1440px;
+  max-width: min(90%, 1440px);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 3vw, 2rem);
   width: 100%;
 }
 
@@ -53,6 +54,7 @@
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 @keyframes fadeIn {
@@ -65,17 +67,18 @@
 }
 
 .section-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: clamp(1rem, 3vw, 1.5rem);
   letter-spacing: -0.5px;
 }
 
 .section-subtitle {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 400;
   color: #666;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.6;
 }
 
 .hover-lift {
@@ -84,4 +87,38 @@
 
 .hover-lift:hover {
   transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .section {
+    scroll-snap-align: none;
+  }
+  
+  .content-wrapper {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    text-align: center;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hover-lift:hover {
+    transform: none;
+  }
+  
+  .scroll-snap-container {
+    scroll-behavior: auto;
+  }
+  
+  .fade-in {
+    transition: none;
+  }
 }

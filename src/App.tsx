@@ -23,9 +23,9 @@ function App() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar theme={theme} onThemeChange={setTheme} />
-        <div className="container mx-auto px-4 pt-20 pb-8">
+        <div className="container mx-auto px-4 pt-12 pb-8">
           <Header />
-          <main className="space-y-4">
+          <main className="space-y-2">
             <Experience />
             <Skills />
             <Education />
