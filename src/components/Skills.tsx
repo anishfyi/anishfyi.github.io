@@ -1,6 +1,3 @@
-import React from 'react';
-import { useEffect, useState, useRef } from 'react';
-
 const Skills = () => {
 
   const skillCategories = [
