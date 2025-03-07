@@ -19,7 +19,7 @@ const Experience = () => {
       title: 'Member of Technical Staff - 1',
       company: 'Fyle Technologies Pvt. Ltd.',
       location: 'Bengaluru, KA',
-      period: 'Mar. 2023 – June 2024',
+      period: 'Mar. 2024 – June 2024',
       responsibilities: [
         '**Component Development**: Designed and developed multiple reusable frontend components from scratch using **PrimeNG** as angular framework, reducing frontend repository size by **50%** and promoting code re-usability.',
         '**CSS Optimization**: Implemented **Tailwind CSS** for all styling needs, refactored CSS classes for cross-repository usage, and maintained a central color library for consistent color schemes.',
@@ -35,7 +35,7 @@ const Experience = () => {
       title: 'Engineering Intern',
       company: 'Fyle Technologies Pvt. Ltd.',
       location: 'Bengaluru, KA',
-      period: 'Oct. 2022 – Feb. 2023',
+      period: 'Oct. 2022 – Feb. 2024',
       responsibilities: [
         '**Frontend Development**: Built features using **Angular** and **Angular Material**, with comprehensive unit tests using **Jasmine-Karma**.',
         '**Backend Excellence**: Achieved **100% code coverage** in unit tests using **pytest** for backend code changes.',
