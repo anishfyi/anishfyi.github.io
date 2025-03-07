@@ -43,7 +43,7 @@ const Blogs: React.FC = () => {
     },
     {
       id: 'cypress-e2e-testing',
-      title: 'End-to-End Testing with Cypress',
+      title: 'End-to-End Testing with Cypress in Angular',
       description: 'A comprehensive guide to implementing end-to-end tests using Cypress for modern web applications.',
       date: 'June 22, 2024',
       readTime: '10 min read',
@@ -63,8 +63,8 @@ const Blogs: React.FC = () => {
     // Backend Blogs
     {
       id: 'django-api-creation',
-      title: 'How Are APIs Created in Django',
-      description: 'Learn how to build robust RESTful APIs using Django and Django REST Framework.',
+      title: 'How Are APIs Created in Django ',
+      description: 'Learn how to build robust RESTful APIs using Django and Django REST Framework, Django is a powerful Python web framework...',
       date: 'June 8, 2024',
       readTime: '10 min read',
       tags: ['Django', 'API', 'REST', 'Python'],
@@ -72,7 +72,7 @@ const Blogs: React.FC = () => {
     },
     {
       id: 'django-signals',
-      title: 'Understanding Django Signals: A Comprehensive Guide',
+      title: 'Understanding Django Signals',
       description: 'Learn how Django signals work and how to effectively use them for decoupled communication between applications.',
       date: 'January 15, 2025',
       readTime: '10 min read',
@@ -90,8 +90,15 @@ const Blogs: React.FC = () => {
     }
   ];
 
-  const frontendBlogs = blogs.filter(blog => blog.category === 'frontend');
-  const backendBlogs = blogs.filter(blog => blog.category === 'backend');
+  // Sort blogs by date (newest first)
+  const sortedBlogs = [...blogs].sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  const frontendBlogs = sortedBlogs.filter(blog => blog.category === 'frontend');
+  const backendBlogs = sortedBlogs.filter(blog => blog.category === 'backend');
 
   const BlogGrid = ({ blogs }: { blogs: BlogPreview[] }) => (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

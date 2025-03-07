@@ -624,7 +624,7 @@ jobs:
     },
     'django-api-creation': {
       id: 'django-api-creation',
-      title: 'How Are APIs Created in Django',
+      title: 'How Are APIs Created in Django ',
       date: 'June 8, 2024',
       readTime: '10 min read',
       tags: ['Django', 'API', 'REST', 'Python'],
