@@ -133,7 +133,7 @@ const Blogs: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8">Technical Blog</h1>
+      <h1 className="text-3xl font-bold mb-8">Technical Blogs</h1>
       
       {/* Frontend Section */}
       <div className="mb-12">
