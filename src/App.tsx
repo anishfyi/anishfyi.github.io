@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import './App.css'
-import Header from './components/Header'
-import Experience from './components/Experience'
-import Education from './components/Education'
-import Skills from './components/Skills'
-import Navbar from './components/Navbar'
+
+const Header = lazy(() => import('./components/Header'))
+const Experience = lazy(() => import('./components/Experience'))
+const Education = lazy(() => import('./components/Education'))
+const Skills = lazy(() => import('./components/Skills'))
+const Navbar = lazy(() => import('./components/Navbar'))
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -19,15 +20,17 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-      <Navbar theme={theme} onThemeChange={setTheme} />
-      <div className="container mx-auto px-4 pt-20 pb-8">
-      <Header />
-      <main className="space-y-6">
-        <Experience />
-        <Skills />
-        <Education />
-      </main>
-    </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Navbar theme={theme} onThemeChange={setTheme} />
+        <div className="container mx-auto px-4 pt-20 pb-8">
+          <Header />
+          <main className="space-y-6">
+            <Experience />
+            <Skills />
+            <Education />
+          </main>
+        </div>
+      </Suspense>
     </div>
   )
 }
