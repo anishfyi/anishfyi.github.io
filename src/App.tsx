@@ -6,6 +6,7 @@ const Experience = lazy(() => import('./components/Experience'))
 const Education = lazy(() => import('./components/Education'))
 const Skills = lazy(() => import('./components/Skills'))
 const Navbar = lazy(() => import('./components/Navbar'))
+const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -24,11 +25,12 @@ function App() {
         <Navbar theme={theme} onThemeChange={setTheme} />
         <div className="container mx-auto px-4 pt-20 pb-8">
           <Header />
-          <main className="space-y-6">
+          <main className="space-y-4">
             <Experience />
             <Skills />
             <Education />
           </main>
+          <Footer />
         </div>
       </Suspense>
     </div>
