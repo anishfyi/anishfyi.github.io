@@ -35,9 +35,9 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
   const mobileNavLinkClass = "block px-3 py-2 text-base font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-900 dark:after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full";
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+    <nav className="bg-white dark:bg-gray-800 shadow-md relative z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="text-xl font-bold text-gray-900 dark:text-white h-8 w-8">
@@ -113,40 +113,94 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
             </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-              aria-label="Toggle menu"
+              className="p-2 rounded-md text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none"
             >
-              {isMenuOpen ? (
-                <XMarkIcon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
-              ) : (
-                <Bars3Icon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
-              )}
+              <svg className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg className={`${isMenuOpen ? 'block' : 'hidden'} h-6 w-6`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
             </button>
           </div>
         </div>
-
-        {/* Mobile Navigation Menu */}
-        <div 
-          className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-white dark:bg-gray-800 
-          border border-gray-200 dark:border-gray-700 
-          shadow-lg rounded-b-lg mx-4 mt-1`}
-        >
-          <div className="px-4 pt-3 pb-4 space-y-2 sm:px-4">
-            {location.pathname !== '/' && (
-              <Link to="/" className={mobileNavLinkClass}>Home</Link>
-            )}
-            {location.pathname === '/' ? (
-              <>
-                <a href="#experience" className={mobileNavLinkClass}>Experience</a>
-                <a href="#skills" className={mobileNavLinkClass}>Skills</a>
-                <a href="#education" className={mobileNavLinkClass}>Education</a>
-              </>
-            ) : null}
-            <Link to="/blogs" className={mobileNavLinkClass}>Blogs</Link>
-            <Link to="/projects" className={mobileNavLinkClass}>Projects</Link>
+      </div>
+      
+      {/* Full-page semi-transparent mobile menu */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 md:hidden" onClick={() => setIsMenuOpen(false)}>
+          <div 
+            className="bg-white dark:bg-gray-800 w-full max-w-sm h-full shadow-xl overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700">
+              <h2 className="text-lg font-medium text-gray-900 dark:text-gray-100">Menu</h2>
+              <button 
+                onClick={() => setIsMenuOpen(false)}
+                className="p-2 rounded-md text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none"
+              >
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            <div className="px-4 py-6 space-y-4">
+              {location.pathname !== '/' && (
+                <Link 
+                  to="/" 
+                  className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Home
+                </Link>
+              )}
+              
+              {location.pathname === '/' ? (
+                <>
+                  <a 
+                    href="#experience" 
+                    className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Experience
+                  </a>
+                  <a 
+                    href="#skills" 
+                    className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Skills
+                  </a>
+                  <a 
+                    href="#education" 
+                    className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Education
+                  </a>
+                </>
+              ) : null}
+              
+              <Link 
+                to="/blogs" 
+                className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blogs
+              </Link>
+              
+              <Link 
+                to="/projects" 
+                className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };
