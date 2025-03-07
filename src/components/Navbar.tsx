@@ -126,45 +126,24 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-white dark:bg-gray-800 shadow-md`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div 
+          className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-white dark:bg-gray-800 
+          border border-gray-200 dark:border-gray-700 
+          shadow-lg rounded-b-lg mx-4 mt-1`}
+        >
+          <div className="px-4 pt-3 pb-4 space-y-2 sm:px-4">
             {location.pathname !== '/' && (
               <Link to="/" className={mobileNavLinkClass}>Home</Link>
             )}
             {location.pathname === '/' ? (
               <>
-                <a
-                  href="#experience"
-                  className={mobileNavLinkClass}
-                >
-                  Experience
-                </a>
-                <a
-                  href="#skills"
-                  className={mobileNavLinkClass}
-                >
-                  Skills
-                </a>
-                <a
-                  href="#education"
-                  className={mobileNavLinkClass}
-                >
-                  Education
-                </a>
+                <a href="#experience" className={mobileNavLinkClass}>Experience</a>
+                <a href="#skills" className={mobileNavLinkClass}>Skills</a>
+                <a href="#education" className={mobileNavLinkClass}>Education</a>
               </>
             ) : null}
-            <Link
-              to="/blogs"
-              className={mobileNavLinkClass}
-            >
-              Blogs
-            </Link>
-            <Link
-              to="/projects"
-              className={mobileNavLinkClass}
-            >
-              Projects
-            </Link>
+            <Link to="/blogs" className={mobileNavLinkClass}>Blogs</Link>
+            <Link to="/projects" className={mobileNavLinkClass}>Projects</Link>
           </div>
         </div>
       </div>
