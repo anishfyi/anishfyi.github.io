@@ -26,14 +26,6 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
     setIsMenuOpen(false);
   }, [location]);
 
-  const navLinks = [
-    { name: 'Experience', href: '#experience' },
-    { name: 'Education', href: '#education' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Blogs', href: '/blogs' },
-    { name: 'Projects', href: '/projects' }
-  ];
-
   const handleThemeToggle = () => {
     onThemeChange(theme === 'light' ? 'dark' : 'light');
   };
