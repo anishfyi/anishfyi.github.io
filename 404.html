@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Redirecting...</title>
-    <script>
-      sessionStorage.redirect = location.href;
-      location.replace('/');
+    <script type="module">
+      const validRoutes = ['/', '/about', '/projects'];
+      if (!validRoutes.includes(location.pathname)) {
+        sessionStorage.redirect = location.href;
+        location.replace('/');
+      }
     </script>
+    <meta http-equiv="Refresh" content="0; url='/'">
   </head>
   <body>
     Redirecting to home page...
