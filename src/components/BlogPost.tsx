@@ -1,4 +1,4 @@
-import React, { JSX } from 'react';
+import React, { JSX, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 interface BlogContent {
@@ -12,6 +12,10 @@ interface BlogContent {
 
 const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const blogPosts: Record<string, BlogContent> = {
     'angular-optimization': {
