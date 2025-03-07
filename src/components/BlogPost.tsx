@@ -1150,6 +1150,120 @@ python manage.py migrate app_name zero  # Revert all migrations for app`}</code>
           </p>
         </>
       )
+    },
+    'django-signals': {
+      id: 'django-signals',
+      title: 'Understanding Django Signals: A Comprehensive Guide',
+      date: 'January 15, 2025',
+      readTime: '10 min read',
+      tags: ['Django', 'Python', 'Signals', 'Web Development'],
+      content: (
+        <>
+          <p className="mb-4">
+            Django signals provide a way to allow decoupled applications to get notified when certain actions occur elsewhere in the application. In this comprehensive guide, we'll explore how signals work and how to effectively use them in your Django applications.
+          </p>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">What are Django Signals?</h2>
+          <p className="mb-4">
+            Signals are Django's implementation of the observer pattern. They allow certain senders to notify a set of receivers that some action has taken place. They're especially useful when many pieces of code may be interested in the same events.
+          </p>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Built-in Signals</h2>
+          <p className="mb-4">
+            Django comes with several built-in signals that you can use:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li><code>pre_save</code> & <code>post_save</code>: Sent before/after a model's save() method is called</li>
+            <li><code>pre_delete</code> & <code>post_delete</code>: Sent before/after a model's delete() method is called</li>
+            <li><code>m2m_changed</code>: Sent when a ManyToManyField is modified</li>
+            <li><code>request_started</code> & <code>request_finished</code>: Sent when Django starts/finishes an HTTP request</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Creating Signal Receivers</h2>
+          <p className="mb-4">
+            Here's how to create a signal receiver:
+          </p>
+          <pre className="bg-gray-800 dark:bg-gray-900 text-gray-100 dark:text-gray-100 p-4 rounded-md mb-4 overflow-x-auto">
+            <code>{`from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django.contrib.auth.models import User
+from .models import Profile
+
+@receiver(post_save, sender=User)
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
+
+@receiver(post_save, sender=User)
+def save_user_profile(sender, instance, **kwargs):
+    instance.profile.save()`}</code>
+          </pre>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Custom Signals</h2>
+          <p className="mb-4">
+            You can also create your own custom signals:
+          </p>
+          <pre className="bg-gray-800 dark:bg-gray-900 text-gray-100 dark:text-gray-100 p-4 rounded-md mb-4 overflow-x-auto">
+            <code>{`from django.dispatch import Signal
+
+# Define the custom signal
+payment_completed = Signal()
+
+# Send the signal
+payment_completed.send(
+    sender=self.__class__,
+    payment_id=payment.id,
+    amount=payment.amount
+)
+
+# Receive the signal
+@receiver(payment_completed)
+def handle_payment_completed(sender, payment_id, amount, **kwargs):
+    # Handle the payment completion
+    pass`}</code>
+          </pre>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Best Practices</h2>
+          <p className="mb-4">
+            When working with Django signals, keep these best practices in mind:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Use signals sparingly - they can make code flow harder to follow</li>
+            <li>Place signal receivers in a <code>signals.py</code> module</li>
+            <li>Import and connect signals in the app's <code>apps.py</code> ready() method</li>
+            <li>Document signal parameters thoroughly</li>
+            <li>Be cautious with signals in time-critical code paths</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Common Use Cases</h2>
+          <p className="mb-4">
+            Django signals are particularly useful for:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Creating user profiles automatically when a user is created</li>
+            <li>Sending welcome emails after registration</li>
+            <li>Invalidating caches when models are updated</li>
+            <li>Logging model changes for audit trails</li>
+            <li>Triggering external service notifications</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Performance Considerations</h2>
+          <p className="mb-4">
+            While signals are powerful, they can impact performance if not used carefully:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li>Signals are synchronous by default</li>
+            <li>Consider using asynchronous tasks for heavy processing</li>
+            <li>Be mindful of signal receivers that trigger additional database queries</li>
+            <li>Use bulk operations carefully as they may not trigger signals</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Conclusion</h2>
+          <p className="mb-4">
+            Django signals are a powerful feature that enables loose coupling between components in your application. When used appropriately, they can help maintain clean, maintainable code while handling cross-cutting concerns effectively. Just remember to use them judiciously and follow best practices to avoid potential pitfalls.
+          </p>
+        </>
+      )
     }
   };
   

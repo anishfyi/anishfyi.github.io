@@ -71,6 +71,15 @@ const Blogs: React.FC = () => {
       category: 'backend'
     },
     {
+      id: 'django-signals',
+      title: 'Understanding Django Signals: A Comprehensive Guide',
+      description: 'Learn how Django signals work and how to effectively use them for decoupled communication between applications.',
+      date: 'January 15, 2025',
+      readTime: '10 min read',
+      tags: ['Django', 'Python', 'Signals', 'Web Development'],
+      category: 'backend'
+    },
+    {
       id: 'django-migrations',
       title: 'What Are Migrations in Django',
       description: 'Understanding Djangos migration system for managing database schema changes effectively.',
