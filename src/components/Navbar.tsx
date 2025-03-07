@@ -126,9 +126,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        <div
-          className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}
-        >
+        <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-white dark:bg-gray-800 shadow-md`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {location.pathname !== '/' && (
               <Link to="/" className={mobileNavLinkClass}>Home</Link>
