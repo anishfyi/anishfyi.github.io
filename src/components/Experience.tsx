@@ -3,22 +3,6 @@ import React from 'react';
 import { useEffect, useState, useRef } from 'react';
 
 const Experience = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (sectionRef.current) {
-        const rect = sectionRef.current.getBoundingClientRect();
-        const scrollProgress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
-        const index = Math.floor(scrollProgress * experiences.length);
-        setActiveIndex(Math.min(Math.max(0, index), experiences.length - 1));
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const experiences = [
     {
@@ -39,12 +23,14 @@ const Experience = () => {
       location: 'Bengaluru, KA',
       period: 'Mar. 2023 – June 2024',
       responsibilities: [
-        'Component Development: Designed and developed multiple reusable frontend components using **PrimeNG** and **Angular**, reducing frontend repository size by **50%**.',
-        'CSS Optimization: Implemented **Tailwind CSS** for styling needs, refactored CSS classes for cross-repository usage.',
-        'Application Revamp: Rebuilt Angular UI app using **PrimeNG** and **Angular 14**, reducing customer friction by **60%**.',
-        'Backend Development: Enhanced multiple backend modules and created testing environments for streamlined collaboration.',
-        'Testing Excellence: Added **end-to-end tests** using **Cypress**, achieving **97% code coverage** with **Jasmine** and **Karma**.',
-        'Customer Success: Excelled in support engineering, providing timely bug resolutions and maintaining high customer satisfaction.'
+        'Component Development: Designed and developed multiple reusable frontend components from scratch using **PrimeNG** as angular framework, reducing frontend repository size by **50%** and promoting code re-usability.',
+        'CSS Optimization: Implemented **Tailwind CSS** for all styling needs, refactored CSS classes for cross-repository usage, and maintained a central color library for consistent color schemes.',
+        'Application Revamp: Rebuilt an outdated Angular UI app using **PrimeNG** and **Angular 14**, referencing Figma UI designs from the design team. Conducted multiple rounds of reviews with engineering and design teams, ensuring a bug-free delivery that reduced customer friction by **60%** (as reported by AppCues).',
+        'Backend Enhancements: Worked on multiple backend modules, added new environments, and created multiple testing environments to streamline team testing and collaboration.',
+        'Usability Improvements: Identified and resolved multiple usability issues, enhancing the overall user experience and application accessibility.',
+        'End-to-End Testing: Added comprehensive **end-to-end tests** using **cypress** framework to the newly written frontend code in **Angular 14**, ensuring best standards suggested by cypress.',
+        'Code Quality: Achieved **97% code coverage** with **unit tests** using **Jasmine** and **Karma**, guaranteeing high-quality code that meets industry standards.',
+        'Customer Support: Excelled as a support engineer, attending customer calls, triaging bugs on call, and providing timely resolutions to ensure high customer satisfaction.'
       ]
     },
     {
@@ -62,15 +48,15 @@ const Experience = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="section relative bg-black" id="experience">
+    <section className="section relative bg-black" id="experience">
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black opacity-50"></div>
       <div className="content-wrapper relative z-10">
-        <h2 className="text-4xl md:text-6xl font-bold text-white mb-16 tracking-tight">Experience</h2>
-        <div className="space-y-24">
+        <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight">Experience</h2>
+        <div className="space-y-12">
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className={`transform transition-all duration-700 ${index === activeIndex ? 'opacity-100 translate-y-0' : 'opacity-50 translate-y-8'}`}
+            className="opacity-100"
           >
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-8 text-white">
               <div>

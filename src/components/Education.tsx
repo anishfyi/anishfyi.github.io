@@ -2,22 +2,6 @@ import React from 'react';
 import { useEffect, useState, useRef } from 'react';
 
 const Education = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (sectionRef.current) {
-        const rect = sectionRef.current.getBoundingClientRect();
-        const scrollProgress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
-        const index = Math.floor(scrollProgress * education.length);
-        setActiveIndex(Math.min(Math.max(0, index), education.length - 1));
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const education = [
     {
@@ -29,15 +13,15 @@ const Education = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="section relative bg-white dark:bg-black" id="education">
+    <section className="section relative bg-white dark:bg-black" id="education">
       <div className="absolute inset-0 bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-black opacity-50"></div>
       <div className="content-wrapper relative z-10">
-        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-16 tracking-tight">Education</h2>
-        <div className="space-y-24">
+        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 tracking-tight">Education</h2>
+        <div className="space-y-2">
           {education.map((edu, index) => (
             <div
               key={index}
-              className={`transform transition-all duration-700 ${index === activeIndex ? 'opacity-100 translate-y-0' : 'opacity-50 translate-y-8'}`}
+              className="opacity-100"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-8">
                 <div>

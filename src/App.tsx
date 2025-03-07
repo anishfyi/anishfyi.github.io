@@ -22,10 +22,10 @@ function App() {
       <Navbar theme={theme} onThemeChange={setTheme} />
       <div className="container mx-auto px-4 pt-20 pb-8">
       <Header />
-      <main className="space-y-16">
+      <main className="space-y-6">
         <Experience />
-        <Education />
         <Skills />
+        <Education />
       </main>
     </div>
     </div>
