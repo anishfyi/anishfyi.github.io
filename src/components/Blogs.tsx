@@ -15,6 +15,15 @@ const Blogs: React.FC = () => {
   const blogs: BlogPreview[] = [
     // Frontend Blogs
     {
+      id: 'angular-optimization',
+      title: 'Angular Performance Optimization Techniques',
+      description: 'Learn how to optimize your Angular applications for better performance and user experience.',
+      date: 'May 15, 2024',
+      readTime: '8 min read',
+      tags: ['Angular', 'Performance', 'Optimization'],
+      category: 'frontend'
+    },
+    {
       id: 'angular-migration-best-practices',
       title: 'Things to Take Care While Doing Angular Migration',
       description: 'Essential considerations and best practices for successfully migrating between Angular versions.',
@@ -30,15 +39,6 @@ const Blogs: React.FC = () => {
       date: 'May 12, 2024',
       readTime: '11 min read',
       tags: ['Testing', 'Istanbul', 'Code Coverage', 'JavaScript'],
-      category: 'frontend'
-    },
-    {
-      id: 'angular-optimization',
-      title: 'Angular Performance Optimization Techniques',
-      description: 'Learn how to optimize your Angular applications for better performance and user experience.',
-      date: 'May 15, 2024',
-      readTime: '8 min read',
-      tags: ['Angular', 'Performance', 'Optimization'],
       category: 'frontend'
     },
     {
