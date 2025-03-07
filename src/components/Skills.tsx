@@ -24,7 +24,7 @@ const Skills = () => {
       skills: [
         '**JavaScript/TypeScript** development',
         '**Python** programming',
-        '**C++** development'
+        '**C++** with Data Structures and Algorithms'
       ]
     },
     {
