@@ -7,11 +7,11 @@ const Experience = () => {
       location: 'Bengaluru, KA',
       period: 'July 2024 – Present',
       responsibilities: [
-        'Test Coverage: Boosted code coverage from 30% to 70% by implementing comprehensive unit tests across critical paths using Jasmine/Karma.',
-'**Frontend Development**: Shipped multiple user-facing features while creating reusable components that reduced UI code duplication by 40%.',
-'**Backend Optimization**: Implemented real-time updates using signal-based architecture and delivered 5+ REST APIs improving system responsiveness.',
+        '**Frontend Development**: Shipped multiple user-facing features while creating reusable components that reduced UI code duplication by 40%.',
+        '**Backend Optimization**: Implemented real-time updates using signal-based architecture and delivered 5+ REST APIs improving system responsiveness.',
         '**Quality Assurance**: Established and managed team testing standards, utilizing **Notion** and **Sheets** for efficient testing of new features prior to production deployment.',
         'Automated support tasks by developing multiple scripts, resulting in **increased productivity** and **reduced service requests by over 40%**.',
+        '**Test Coverage**: Boosted code coverage from 30% to 70% by implementing comprehensive unit tests across critical paths using Jasmine/Karma.',
         '**Leadership**: **Mentored interns** and provided guidance on project development.'
       ]
     },
