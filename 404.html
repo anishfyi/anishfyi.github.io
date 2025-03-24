@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script type="module">
-      const validRoutes = ['/', '/about', '/projects'];
-      if (!validRoutes.includes(location.pathname)) {
+      const validRoutes = ['/', '/about', '/projects', '/blogs', '/blogs/'];
+      const path = location.pathname;
+      if (!validRoutes.includes(path) && !path.startsWith('/blogs/')) {
         sessionStorage.redirect = location.href;
         location.replace('/');
       }
