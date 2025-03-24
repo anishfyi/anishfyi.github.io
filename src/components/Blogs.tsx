@@ -160,4 +160,4 @@ const Blogs: React.FC = () => {
   );
 };
 
-export default Blogs; 
+export default Blogs;
