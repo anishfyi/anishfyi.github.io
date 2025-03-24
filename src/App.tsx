@@ -43,7 +43,7 @@ function App() {
         <Suspense fallback={<Loading />}>
           <Navbar theme={theme} onThemeChange={setTheme} />
           <Routes>
-            <Route path="/" element={
+            <Route path="#/" element={
               <div className="container mx-auto px-4 pt-12 pb-8">
                 <Header />
                 <main className="space-y-2">
@@ -53,9 +53,9 @@ function App() {
                 </main>
               </div>
             } />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/blogs/:id" element={<BlogPost />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="#/blogs" element={<Blogs />} />
+            <Route path="#/blogs/:id" element={<BlogPost />} />
+            <Route path="#/projects" element={<Projects />} />
             {/* Catch-all route for 404 errors */}
             <Route path="*" element={<NotFound />} />
           </Routes>

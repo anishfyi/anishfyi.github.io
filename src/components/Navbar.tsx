@@ -41,10 +41,10 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
           <div className="hidden md:flex items-center">
             <div className="hidden md:flex space-x-4">
               {!isHomePage && (
-                <Link to="/" className={navLinkClass}>Home</Link>
+                <Link to="#/" className={navLinkClass}>Home</Link>
               )}
-              <Link to="/blogs" className={navLinkClass}>Blogs</Link>
-              <Link to="/projects" className={navLinkClass}>Projects</Link>
+              <Link to="#/blogs" className={navLinkClass}>Blogs</Link>
+              <Link to="#/projects" className={navLinkClass}>Projects</Link>
               <a href={resumePDF} download className={navLinkClass}>Resume</a>
             </div>
             
@@ -123,7 +123,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
             <div className="px-4 py-6 space-y-4">
               {!isHomePage && (
                 <Link 
-                  to="/" 
+                  to="#/" 
                   className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   onClick={() => setIsOpen(false)}
                 >
@@ -131,14 +131,14 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
                 </Link>
               )}
               <Link 
-                to="/blogs" 
+                to="#/blogs" 
                 className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                 onClick={() => setIsOpen(false)}
               >
                 Blogs
               </Link>
               <Link 
-                to="/projects" 
+                to="#/projects" 
                 className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                 onClick={() => setIsOpen(false)}
               >
