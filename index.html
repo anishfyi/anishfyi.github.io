@@ -6,12 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anish Kr Singh - Portfolio</title>
     <script type="text/javascript">
-      // Redirect from 404.html
+      // Handle redirects from 404.html
       (function() {
-        const redirect = sessionStorage.redirect;
+        // Check if we need to redirect
+        var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
+        
         if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect);
+          // Extract the hash if needed
+          var hashIndex = redirect.indexOf('#');
+          if (hashIndex > -1) {
+            // If there's a hash, use it to rebuild the URL correctly
+            var hash = redirect.substring(hashIndex);
+            var baseUrl = window.location.protocol + '//' + window.location.host;
+            
+            // Use history state to avoid page reload
+            history.replaceState(null, null, baseUrl + hash);
+          } else {
+            // Otherwise just go to the redirect URL
+            history.replaceState(null, null, redirect);
+          }
         }
       })();
     </script>

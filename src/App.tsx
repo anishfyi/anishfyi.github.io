@@ -13,6 +13,19 @@ const Blogs = lazy(() => import('./components/Blogs'))
 const BlogPost = lazy(() => import('./components/BlogPost'))
 const Projects = lazy(() => import('./components/Projects'))
 
+// 404 Not Found Component
+const NotFound = () => (
+  <div className="container mx-auto px-4 py-12">
+    <div className="text-center">
+      <h1 className="text-3xl font-bold mb-4">Page Not Found</h1>
+      <p className="mb-6">The page you're looking for doesn't exist.</p>
+      <a href="#/" className="inline-block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-6 py-2 rounded-md">
+        Back to Home
+      </a>
+    </div>
+  </div>
+);
+
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
@@ -43,6 +56,8 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blogs/:id" element={<BlogPost />} />
             <Route path="/projects" element={<Projects />} />
+            {/* Catch-all route for 404 errors */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </Suspense>

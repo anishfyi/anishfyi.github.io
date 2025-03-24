@@ -22,6 +22,18 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
   // Define only the navLinkClass that's actually used
   const navLinkClass = "px-3 py-2 text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-900 dark:after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full";
   
+  // Check if we're on the home page
+  const isHomePage = location.pathname === '/' || location.pathname === '';
+  
+  // Function to handle scrolling to sections
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsOpen(false);
+  };
+  
   return (
     <nav className="bg-white dark:bg-gray-800 shadow-md relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,14 +48,29 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
           
           <div className="hidden md:flex items-center">
             <div className="hidden md:flex space-x-4">
-              {location.pathname !== '/' && (
+              {!isHomePage && (
                 <Link to="/" className={navLinkClass}>Home</Link>
               )}
-              {location.pathname === '/' ? (
+              {isHomePage ? (
                 <>
-                  <a href="#experience" className={navLinkClass}>Experience</a>
-                  <a href="#skills" className={navLinkClass}>Skills</a>
-                  <a href="#education" className={navLinkClass}>Education</a>
+                  <button 
+                    onClick={() => scrollToSection('experience')} 
+                    className={navLinkClass}
+                  >
+                    Experience
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('skills')} 
+                    className={navLinkClass}
+                  >
+                    Skills
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('education')} 
+                    className={navLinkClass}
+                  >
+                    Education
+                  </button>
                 </>
               ) : null}
               <Link to="/blogs" className={navLinkClass}>Blogs</Link>
@@ -123,7 +150,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
             </div>
             
             <div className="px-4 py-6 space-y-4">
-              {location.pathname !== '/' && (
+              {!isHomePage && (
                 <Link 
                   to="/" 
                   className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
@@ -133,29 +160,26 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
                 </Link>
               )}
               
-              {location.pathname === '/' ? (
+              {isHomePage ? (
                 <>
-                  <a 
-                    href="#experience" 
-                    className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-                    onClick={() => setIsOpen(false)}
+                  <button 
+                    onClick={() => scrollToSection('experience')}
+                    className="block w-full text-left px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   >
                     Experience
-                  </a>
-                  <a 
-                    href="#skills" 
-                    className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-                    onClick={() => setIsOpen(false)}
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('skills')}
+                    className="block w-full text-left px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   >
                     Skills
-                  </a>
-                  <a 
-                    href="#education" 
-                    className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-                    onClick={() => setIsOpen(false)}
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('education')}
+                    className="block w-full text-left px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   >
                     Education
-                  </a>
+                  </button>
                 </>
               ) : null}
               
