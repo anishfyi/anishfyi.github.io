@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Single page app redirect script
+      // This handles GitHub Pages custom domains and non-root paths
+      (function() {
+        // Extract the hash from the URL
+        var hash = window.location.hash;
+        
+        // Create a clean redirect URL with just the root path and hash
+        var cleanUrl = window.location.protocol + '//' + window.location.hostname + 
+                     (window.location.port ? ':' + window.location.port : '') + '/';
+        
+        // Add the hash back if it exists                  
+        if (hash) {
+          cleanUrl += hash;
+        }
+        
+        // Store the clean URL for redirection
+        sessionStorage.redirect = cleanUrl;
+        
+        // Redirect to the root path
+        window.location.replace('/');
+      })();
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/'">
+  </head>
+  <body>
+    Redirecting to home page...
+  </body>
+</html> 
