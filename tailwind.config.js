@@ -7,6 +7,20 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          '-apple-system',
+          'SF Pro Display',
+          'SF Pro Text',
+          'system-ui',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'sans-serif'
+        ],
+      },
       colors: {
         primary: '#3b82f6',
         secondary: '#10b981',

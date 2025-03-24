@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import resumePDF from '../assets/anish_resume_2.pdf';
 
 interface NavbarProps {
   theme: 'light' | 'dark';
@@ -48,31 +49,10 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
           
           <div className="hidden md:flex items-center">
             <div className="hidden md:flex space-x-4">
+              <a href={resumePDF} download className={navLinkClass}>Resume</a>
               {!isHomePage && (
                 <Link to="/" className={navLinkClass}>Home</Link>
               )}
-              {isHomePage ? (
-                <>
-                  <button 
-                    onClick={() => scrollToSection('experience')} 
-                    className={navLinkClass}
-                  >
-                    Experience
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('skills')} 
-                    className={navLinkClass}
-                  >
-                    Skills
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('education')} 
-                    className={navLinkClass}
-                  >
-                    Education
-                  </button>
-                </>
-              ) : null}
               <Link to="/blogs" className={navLinkClass}>Blogs</Link>
               <Link to="/projects" className={navLinkClass}>Projects</Link>
             </div>
@@ -150,6 +130,14 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
             </div>
             
             <div className="px-4 py-6 space-y-4">
+              <a 
+                href={resumePDF} 
+                download
+                className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                onClick={() => setIsOpen(false)}
+              >
+                Resume
+              </a>
               {!isHomePage && (
                 <Link 
                   to="/" 
@@ -159,30 +147,6 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
                   Home
                 </Link>
               )}
-              
-              {isHomePage ? (
-                <>
-                  <button 
-                    onClick={() => scrollToSection('experience')}
-                    className="block w-full text-left px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-                  >
-                    Experience
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('skills')}
-                    className="block w-full text-left px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-                  >
-                    Skills
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('education')}
-                    className="block w-full text-left px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-                  >
-                    Education
-                  </button>
-                </>
-              ) : null}
-              
               <Link 
                 to="/blogs" 
                 className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
@@ -190,7 +154,6 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
               >
                 Blogs
               </Link>
-              
               <Link 
                 to="/projects" 
                 className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"

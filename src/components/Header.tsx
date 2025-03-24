@@ -37,8 +37,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
-        <div className="animate-bounce w-6 h-6 border-2 border-white border-t-0 border-l-0 transform rotate-45 opacity-50"></div>
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+        <span className="text-sm text-gray-900 dark:text-gray-300 mb-2">Scroll to explore</span>
+        <div className="animate-bounce w-6 h-6 border-2 border-gray-900 dark:border-gray-300 border-t-0 border-l-0 transform rotate-45"></div>
       </div>
     </header>
   );

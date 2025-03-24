@@ -27,7 +27,7 @@ const NotFound = () => (
 );
 
 function App() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
 
   useEffect(() => {
     if (theme === 'dark') {
