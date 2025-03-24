@@ -26,15 +26,6 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
   // Check if we're on the home page
   const isHomePage = location.pathname === '/' || location.pathname === '';
   
-  // Function to handle scrolling to sections
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsOpen(false);
-  };
-  
   return (
     <nav className="bg-white dark:bg-gray-800 shadow-md relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
