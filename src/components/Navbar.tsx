@@ -40,12 +40,12 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
           
           <div className="hidden md:flex items-center">
             <div className="hidden md:flex space-x-4">
-              <a href={resumePDF} download className={navLinkClass}>Resume</a>
               {!isHomePage && (
                 <Link to="/" className={navLinkClass}>Home</Link>
               )}
               <Link to="/blogs" className={navLinkClass}>Blogs</Link>
               <Link to="/projects" className={navLinkClass}>Projects</Link>
+              <a href={resumePDF} download className={navLinkClass}>Resume</a>
             </div>
             
             <div className="ml-4 flex items-center">
@@ -121,14 +121,6 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
             </div>
             
             <div className="px-4 py-6 space-y-4">
-              <a 
-                href={resumePDF} 
-                download
-                className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-                onClick={() => setIsOpen(false)}
-              >
-                Resume
-              </a>
               {!isHomePage && (
                 <Link 
                   to="/" 
@@ -152,6 +144,14 @@ const Navbar: React.FC<NavbarProps> = ({ theme, onThemeChange }) => {
               >
                 Projects
               </Link>
+              <a 
+                href={resumePDF} 
+                download
+                className="block px-3 py-3 text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                onClick={() => setIsOpen(false)}
+              >
+                Resume
+              </a>
             </div>
           </div>
         </div>
