@@ -21,7 +21,7 @@ const Experience = () => {
       location: 'Bengaluru, KA',
       period: 'Mar. 2024 – June 2024',
       responsibilities: [
-        '**Component Development**: Designed and developed multiple reusable frontend components from scratch using **PrimeNG** as angular framework, reducing frontend repository size by **50%** and promoting code re-usability.',
+        '**Component Development**: Designed and developed multiple reusable frontend components from scratch using **PrimeNG** as Angular framework, reducing frontend repository size by **50%** and promoting code re-usability.',
         '**CSS Optimization**: Implemented **Tailwind CSS** for all styling needs, refactored CSS classes for cross-repository usage, and maintained a central color library for consistent color schemes.',
         '**Application Revamp**: Rebuilt an outdated Angular UI app using **PrimeNG** and **Angular 14**, referencing Figma UI designs from the design team. Conducted multiple rounds of reviews with engineering and design teams, ensuring a bug-free delivery that reduced customer friction by **60%** (as reported by AppCues).',
         '**Backend Enhancements**: Worked on multiple backend modules, added new environments, and created multiple testing environments to streamline team testing and collaboration.',
