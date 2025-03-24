@@ -5,7 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anish Kr Singh - Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-DpGLktCq.js"></script>
+    <script type="text/javascript">
+      // Redirect from 404.html
+      (function() {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-fCukUB_o.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-DEn4OjRg.js">
     <link rel="stylesheet" crossorigin href="/assets/index-ClxBVXA6.css">
   </head>
   <body>
