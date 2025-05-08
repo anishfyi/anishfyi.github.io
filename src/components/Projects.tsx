@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
       title: 'GitHub Repository Lister',
       description: 'A tool that lists and categorizes GitHub repositories, providing insights and analytics on code repositories.',
       technologies: ['React', 'GitHub API', 'Chart.js', 'Tailwind CSS'],
-      imageUrl: 'https://miro.medium.com/v2/resize:fit:1100/1*CWFkh5z8oa6dZfn5_gkKKQ.jpeg',
+      imageUrl: '/images/github_thumb.jpeg',
       githubUrl: 'https://github.com/anishfyi/GitHubRepoLister',
       liveUrl: 'https://github-repo-lister.netlify.app'
     }
