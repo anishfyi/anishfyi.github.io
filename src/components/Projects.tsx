@@ -16,7 +16,8 @@ const Projects: React.FC = () => {
       description: 'Generate and customize QR codes instantly.',
       technologies: ['React', 'JavaScript', 'CSS', 'QR Code API'],
       imageUrl: '/images/qr_thumb.jpeg',
-      liveUrl: 'https://qr-code-beige-mu.vercel.app/'
+      githubUrl: 'https://github.com/anishfyi/qr-code',
+      liveUrl: 'https://qr-code-generator-inky.vercel.app/'
     },
     {
       title: 'GitHub Repository Lister',
