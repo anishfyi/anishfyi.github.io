@@ -12,12 +12,11 @@ interface Project {
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website showcasing my skills, experience, and projects. Features dark/light mode and responsive design.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png',
-      githubUrl: 'https://github.com/anishfyi/anishfyi.github.io',
-      liveUrl: 'https://anishfyi.github.io/'
+      title: 'QR Code Generator',
+      description: 'Generate and customize QR codes instantly.',
+      technologies: ['React', 'JavaScript', 'CSS', 'QR Code API'],
+      imageUrl: '/images/qr_thumb.jpeg',
+      liveUrl: 'https://qr-code-beige-mu.vercel.app/'
     },
     {
       title: 'GitHub Repository Lister',
