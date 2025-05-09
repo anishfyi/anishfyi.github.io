@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
     },
     {
       title: 'GitHub Repository Lister',
-      description: 'A tool that lists and categorizes GitHub repositories, providing insights and analytics on code repositories.',
+      description: 'A tool that lists repositories, for entered GitHub username.',
       technologies: ['React', 'GitHub API', 'Chart.js', 'Tailwind CSS'],
       imageUrl: '/images/github_thumb.jpg',
       githubUrl: 'https://github.com/anishfyi/github-repository-lister',

@@ -18,6 +18,12 @@ const Header = () => {
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-light leading-relaxed">
             Software Engineer with 2+ years of experience.</p>
           <div className="flex flex-wrap gap-6 text-gray-700 dark:text-gray-300 text-lg pt-8">
+            <a href="https://github.com/anishfyle" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               className="group hover:text-gray-900 dark:hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <span className="border-b border-gray-500 hover:border-gray-900 dark:hover:border-white pb-1">See My Work at Fyle</span>
+            </a>
             <a href="mailto:anishfyi@gmail.com" 
                className="hover:text-gray-900 dark:hover:text-white transition-colors duration-300 flex items-center gap-2">
               <span className="border-b border-gray-500 hover:border-gray-900 dark:hover:border-white pb-1">anishfyi@gmail.com</span>
