@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
       technologies: ['React', 'JavaScript', 'CSS', 'QR Code API'],
       imageUrl: '/images/qr_thumb.jpeg',
       githubUrl: 'https://github.com/anishfyi/qr-code',
-      liveUrl: 'https://qr-code-generator-inky.vercel.app/'
+      liveUrl: 'https://qr-code-beige-mu.vercel.app/'
     },
     {
       title: 'GitHub Repository Lister',
