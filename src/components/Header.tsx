@@ -28,7 +28,7 @@ const Header = () => {
                className="hover:text-gray-900 dark:hover:text-white transition-colors duration-300 flex items-center gap-2">
               <span className="border-b border-gray-500 hover:border-gray-900 dark:hover:border-white pb-1">anishfyi@gmail.com</span>
             </a>
-            <a href="https://linkedin.com/in/fyianish" 
+            <a href="https://linkedin.com/in/anishfyi" 
                target="_blank" 
                rel="noopener noreferrer" 
                className="hover:text-gray-900 dark:hover:text-white transition-colors duration-300 flex items-center gap-2">
